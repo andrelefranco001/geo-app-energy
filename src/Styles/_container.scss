@@ -1,0 +1,77 @@
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 40px 2px rgba(0, 0, 0, 0.1);
+}
+
+.home-cont {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.home-cont h1 {
+  font-size: 62px;
+  background: -webkit-linear-gradient(#6783ff, #2759c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-cont h1:hover {
+  background: -webkit-linear-gradient(rgb(255, 220, 106), rgb(197, 158, 28));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-container.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  height: auto;
+  width: 800px;
+}
+
+.custom-popup .popup-content {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 620px;
+  gap: 1rem;
+}
+
+.custom-popup img {
+  height: 100px;
+  width: auto;
+  padding-top: 1.5rem;
+}
+
+
+.custom-popup .popup-content-detail {
+  display: block;
+  align-self: center;
+  text-align: left;
+  padding-left: 1rem;
+  height: auto;
+  width: 175px;
+
+  background-color: #6783ff;
+  border-radius: 10px;
+}
+
+.custom-popup .popup-content-detail p {
+  line-height: 5px;
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 0.5rem;
+  color: #6783ff;
+}

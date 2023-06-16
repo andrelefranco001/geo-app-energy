@@ -1,0 +1,22 @@
+*{
+  font-family: "Raleway", sans-serif;
+}
+
+h3{
+  font-size: medium;
+  color:#4d4d4d ;
+  padding-bottom: 1rem;
+}
+p{
+
+}
+
+body {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 250, 255);
+}
