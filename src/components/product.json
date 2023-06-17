@@ -2,7 +2,7 @@
     "products": [
       {
         "id": 142,
-        "img": "thunder.png",
+        "img": "../assets/thunder.png",
         "name": "Energia",
         "comment": "⭐⭐⭐⭐⭐",
         "date": "2023-06-16",
@@ -12,7 +12,7 @@
       },
       {
         "id": 189,
-        "img": "thunder.png",
+        "img": "./assets/thunder.png",
         "name": "Energia",
         "comment": "⭐⭐⭐⭐",
         "date": "2022-03-11",
