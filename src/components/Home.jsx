@@ -4,6 +4,9 @@ import L from "leaflet";
 import pin_motor from "/public/pin_motor.png";
 import pin_thunder from "/public/pin_thunder.png";
 import pin_router from "/public/pin_router.png";
+import motor from "/public/motor.png";
+import router from "/public/router.png";
+import energy from "/public/thunder.png";
 import productos from "../product.json";
 
 function Home() {
@@ -40,30 +43,35 @@ function Home() {
     });
 
     // Agrega los marcadores al mapa
+    // se llama a las imagenes desde aca porque Github no me permite desde el JSON
     productos.products.forEach((producto) => {
       let icon;
+      let image;
       if (producto.name === "Motor") {
         icon = motorIcon;
+        image = motor;
       } else if (producto.name === "Energia") {
         icon = thunderIcon;
+        image = energy;
       } else if (producto.name === "Wifi Router") {
         icon = routerIcon;
+        image = router;
       }
 
       L.marker([producto.lat, producto.lng], { icon: icon })
         .bindPopup(
           `<div class="popup-content">
-          <img src="${producto.image}" alt="Product" />
-          <div class="popup-content-detail">
-          <p>ID: ${producto.id}</p>
-          <p>Usuario: ${producto.user}</p>
-          <p>Fecha: ${producto.date}</p>
-          <p>Puntuación: ${producto.comment}</p>
+            <img src="${image}" alt="Product" />
+            <div class="popup-content-detail">
+              <p>ID: ${producto.id}</p>
+              <p>Usuario: ${producto.user}</p>
+              <p>Fecha: ${producto.date}</p>
+              <p>Puntuación: ${producto.comment}</p>
+            </div>
           </div>
-        </div>
-      `, {
-        className: 'custom-popup',
-      })
+          `, {
+            className: 'custom-popup',
+          })
         .addTo(map);
     });
   }, []);
