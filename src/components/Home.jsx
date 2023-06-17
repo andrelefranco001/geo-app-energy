@@ -77,7 +77,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="home-cont">
+    <div className="home-cont animate__animated animate__fadeIn">
       <h1>Bienvenido a Geo App!</h1>
       <div className="login-container home-container">
         <h3>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logomap from "/map1.png";
-import userData from "../user.json"; 
+import userData from "../user.json";
+import "animate.css";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -9,6 +10,7 @@ function Login() {
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -24,7 +26,10 @@ function Login() {
         console.log("Usuario autenticado");
         // Realizar acciones para inicio de sesión exitoso
         localStorage.setItem("user", JSON.stringify({ username }));
-        navigate("/app"); // Redirigir al usuario a la página de inicio
+        setIsLoggedIn(true); // Establecer isLoggedIn como true
+        setTimeout(() => {
+          navigate("/home"); // Redirigir al usuario a la página de inicio después de un retraso
+        }, 1000); // Ajusta el tiempo de espera según la duración de la animación
       } else {
         setPasswordError("Contraseña incorrecta");
       }
@@ -35,7 +40,11 @@ function Login() {
 
   return (
     <>
-      <div className="login-container">
+      <div
+        className={`login-container ${
+          isLoggedIn ? "animate__animated animate__fadeOutLeft" : ""
+        }`}
+      >
         <img className="logomap" src={logomap} alt="map" />
         <h1>Login</h1>
         <form onSubmit={handleLogin}>

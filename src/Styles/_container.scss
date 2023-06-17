@@ -11,29 +11,23 @@
 .home-cont {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 .home-cont h1 {
   font-size: 62px;
-  background: -webkit-linear-gradient(#6783ff, #2759c1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.home-cont h1:hover {
-  background: -webkit-linear-gradient(rgb(255, 220, 106), rgb(197, 158, 28));
+  background-image: -webkit-linear-gradient(#6783ff, #2759c1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .login-container.home-container {
   display: flex;
+  height: auto;
+  width: 900px;
   flex-direction: column;
   align-items: center;
   text-align: left;
-  height: auto;
-  width: 800px;
 }
 
 .custom-popup .popup-content {
@@ -49,7 +43,6 @@
   width: auto;
   padding-top: 1.5rem;
 }
-
 
 .custom-popup .popup-content-detail {
   display: block;
