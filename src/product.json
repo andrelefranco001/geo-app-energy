@@ -2,17 +2,17 @@
     "products": [
       {
         "id": 142,
-        "img": "/public/thunder.png",
-        "name": "Energia",
-        "comment": "⭐⭐⭐⭐⭐",
-        "date": "2023-06-16",
-        "user": "Ana Velez",
-        "lat": 6.223, 
-        "lng": -75.5712
+      "image": "/thunder.png",
+      "name": "Energia",
+      "comment": "⭐⭐⭐⭐",
+      "date": "2023-06-16",
+      "user": "Ana Velez",
+      "lat": 6.223,
+      "lng": -75.5712
       },
       {
         "id": 189,
-        "img": "/public/thunder.png",
+        "image": "/thunder.png",
         "name": "Energia",
         "comment": "⭐⭐⭐⭐",
         "date": "2022-03-11",
@@ -22,7 +22,7 @@
       },
       {
         "id": 245,
-        "img": "/public/thunder.png",
+        "image": "/thunder.png",
         "name": "Energia",
         "comment": "⭐⭐⭐",
         "date": "2020-01-19",
@@ -32,7 +32,7 @@
       },
       {
         "id": 378,
-        "img": "/public/router.png",
+        "image": "/thunder.png",
         "name": "Wifi Router",
         "comment": "⭐⭐⭐⭐",
         "date": "2023-04-20",
@@ -42,7 +42,7 @@
       },
       {
         "id": 490,
-        "img": "/public/router.png",
+        "image": "/thunder.png",
         "name": "Wifi Router",
         "comment": "⭐⭐⭐⭐⭐",
         "date": "2021-10-31",
@@ -52,7 +52,7 @@
       },
       {
         "id": 532,
-        "img": "/public/motor.png",
+        "image": "/motor.png",
         "name": "Motor",
         "comment": "⭐⭐",
         "date": "2020-07-12",
@@ -62,7 +62,7 @@
       },
       {
         "id": 676,
-        "img": "/public/motor.png",
+        "image": "/motor.png",
         "name": "Motor",
         "comment": "⭐⭐⭐⭐",
         "date": "2021-21-12",

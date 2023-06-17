@@ -53,7 +53,7 @@ function Home() {
       L.marker([producto.lat, producto.lng], { icon: icon })
         .bindPopup(
           `<div class="popup-content">
-          <img src="${producto.img}" alt="Product" />
+          <img src="thunder.png" alt="Product" />
           <div class="popup-content-detail">
           <p>ID: ${producto.id}</p>
           <p>Usuario: ${producto.user}</p>
