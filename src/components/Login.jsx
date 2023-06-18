@@ -47,7 +47,7 @@ function Login() {
       >
         <img className="logomap" src={logomap} alt="map" />
         <h1>Login</h1>
-        <form onSubmit={handleLogin}>
+        <form className="form-container" onSubmit={handleLogin}>
           <input
             className="input"
             type="text"
@@ -55,7 +55,9 @@ function Login() {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          {usernameError && <p className="error-message">{usernameError}</p>}
+          {usernameError && (
+            <p className="error-container error-message animate__animated animate__headShake">{usernameError}</p>
+          )}
           <input
             className="input"
             type="password"
@@ -63,7 +65,10 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          {passwordError && <p className="error-message">{passwordError}</p>}
+          {passwordError && (
+            <p className="error-container error-message animate__animated animate__headShake">{passwordError}</p>
+          )}
+
           <button className="login-button" type="submit">
             Login
           </button>
